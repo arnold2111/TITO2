@@ -7,7 +7,7 @@
 
 >Exemple 1: 
 	**1_RequestScope.jsp**
-    	**EnviarVariable, desti.jsp**
+    	**desti.jsp**
     
 
 **2.** Comenta la part JSP de tots aquests exemples, **mira a la API de Java** si et cal informació sobre les classes usades. 
