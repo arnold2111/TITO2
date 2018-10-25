@@ -1,7 +1,7 @@
 # TITO2
 PRACTICA2
 
-##1 CONTESTA.
+## 1 CONTESTA.
 **1.** Llegeix l'apartat Àmbits i Objectes dels apunts de JSP. Prova cadascun dels exemples i mostra una captura de pantalla del resultat obtingut. Pensa que per a que els exemples funcionin, s'ha d'incloure l'importació de les classes utilitzades. 
 
 >Implementa una pàgina HTML des d'on es puguin executar tots els exemples (mitjançant enllaços a aquests)
