@@ -12,7 +12,19 @@
 
 **2.** Comenta la part JSP de tots aquests exemples, **mira a la API de Java** si et cal informació sobre les classes usades. 
 
-	>respuesta
+	>setAttibute() [mètode a utilitzar -> void] -> Emmagatzema un atribut en aquesta sol·licitud. Els atributs es restableixen entre les sol·licituds. Aquest mètode s'usa amb més freqüència juntament amb RequestDispatcher.
+
+setParameter() [mètode a utilitzar -> void] -> X
+
+getAttribute() [llibreria a utilitzar -> java.lang.Objct] -> Retorna el valor de l'atribut nomenat com un objecte, o nul si no hi ha cap atribut del nom donat.
+
+getParameter() [llibreria a utilitzar -> java.lang.String name] -> Retorna el valor d'un paràmetre de sol·licitud com una cadena o nul si el paràmetre no existeix. Els paràmetres de sol·licitud són informació extra enviada amb la sol·licitud. Per als servlets HTTP, els paràmetres estan continguts en la cadena de consulta o en les dades de formulari publicats.
+
+getParameterValues() [llibreria a utilitzar -> java.lang.String []] -> Retorna una matriu d'objectes String que contenen tots els valors que té el paràmetre de sol·licitud donat, o nul si el paràmetre no existeix.
+
+getParameterNames() [llibreria a utilitzar -> java.util.Enumeration] -> Retorna una Enumeració d'objectes de cadena que conté els noms dels paràmetres continguts en aquesta sol·licitud. Si la sol·licitud no té paràmetres, el mètode retorna una enumeració buida.
+
+getInputStream() [mètode a utilitzar -> ServletInputStream] -> Recupera el cos de la sol·licitud com dades binàries servir un ServletInputStream. Es pot trucar a aquest mètode o getReader () per llegir el cos, no a tots dos.
 
 **3.** Quines funcions té l'objecte Session?, explica per a què serveixen 5 d'aquestes funcions. 
 
