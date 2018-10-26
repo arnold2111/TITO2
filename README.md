@@ -1,3 +1,7 @@
+https://www.arquitecturajava.com/usando-java-session-en-aplicaciones-web/
+http://www.programandoconcafe.com/2011/03/java-aplicacion-web-carrito-de-compras.html
+
+
 ##1 CONTESTA.
 **1.** Llegeix l'apartat Àmbits i Objectes dels apunts de JSP. Prova cadascun dels exemples i mostra una captura de pantalla del resultat obtingut. Pensa que per a que els exemples funcionin, s'ha d'incloure l'importació de les classes utilitzades. 
 
