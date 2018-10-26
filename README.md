@@ -26,17 +26,47 @@
 
 	getInputStream() [mètode a utilitzar -> ServletInputStream] -> Recupera el cos de la sol·licitud com dades binàries servir un ServletInputStream. Es pot trucar a aquest mètode o getReader () per llegir el cos, no a tots dos.
 
-**3.** Quines funcions té l'objecte Session?, explica per a què serveixen 5 d'aquestes funcions. 
 
-	>respuesta
+	3. Quines funcions té l'objecte Session?, explica per a què serveixen 5 d'aquestes funcions. 
 
-**4.** Que passa si invalidem una sessió i desprès provem d'afegir-hi atributs? 
+>Algunes de les funcions següents:
+	1. Si volem, podem desactivar la sessió per a una aplicació:
+```<%@ page session="false" %>```
+    2. Per a donar un valor fixe a una variable
+```<% session.setAttribute("variable", new Integer(22));%>```
+	3. Per a recuperar una variable rebuda amb JSP
+```<p>Variable rebuda <%= session.getAttribute("variable") %></p>```
+	4. Si volem configurar el temps de sessió en un arxiu
+```
+<session-config>
+	<session-timeout>15</session-timeout> 
+</session-config>
+```
+	5. Si volem fer una comprobació sobre l'accès a la nostra pàgina web
+>
+```
+HttpSession session = request.getSession(true);
+	System.out.println("session.getLastAccessedTime()" + session.getLastAccessedTime());
+    System.out.println("session.getCreationTime()" + session.getCreationTime());
+    System.out.println("session.getMaxInactiveInterval()" + session.getMaxInactiveInterval());
+    if (session.isNew()) {
+    	head = "New Session Value";
+    }
+    else{
+		head = "Old Session value";
+	}
+```
 
-	>respuesta
+	4. Que passa si invalidem una sessió i desprès provem d'afegir-hi atributs? 
 
-**5.** Si volem fer un carito de la compra, on és millor que guardem aquestes dades, en una Page, Request, Session o Application?. Justifica la resposta. 
+>Segons la API....
+Returns the object bound with the specified name in this session, or null if no object is bound under the name
+Això significa que , si no hi ha una sessió prèviament oberta, no retorna res.
 
-	>respuesta
+	5. Si volem fer un carito de la compra, on és millor que guardem aquestes dades, en una Page, Request, Session o Application?. Justifica la resposta.
+
+>La classe HttpSession que té una estructura de HashMap (Dicccionario) i permet emmagatzemar qualsevol tipus d'objecte en ella de tal manera que pugui ser compartida per les diferents pàgines que com a usuaris utilitzem.
+
 	
 **6.** Si volem guardar una variable amb el nombre d'usuaris connectats a la nostra web, que és millor guardar-ho dins de **l'entorn de sessió o d'aplicació?**. Justifica la resposta 
 
