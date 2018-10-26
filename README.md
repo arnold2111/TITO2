@@ -27,7 +27,7 @@
 	getInputStream() [mètode a utilitzar -> ServletInputStream] -> Recupera el cos de la sol·licitud com dades binàries servir un ServletInputStream. Es pot trucar a aquest mètode o getReader () per llegir el cos, no a tots dos.
 
 
-	3. Quines funcions té l'objecte Session?, explica per a què serveixen 5 d'aquestes funcions. 
+**3.** Quines funcions té l'objecte Session?, explica per a què serveixen 5 d'aquestes funcions. 
 
 >Algunes de les funcions següents:
 	1. Si volem, podem desactivar la sessió per a una aplicació:
@@ -36,13 +36,15 @@
 ```<% session.setAttribute("variable", new Integer(22));%>```
 	3. Per a recuperar una variable rebuda amb JSP
 ```<p>Variable rebuda <%= session.getAttribute("variable") %></p>```
-	4. Si volem configurar el temps de sessió en un arxiu
+
+4. Si volem configurar el temps de sessió en un arxiu
 ```
 <session-config>
 	<session-timeout>15</session-timeout> 
 </session-config>
 ```
-	5. Si volem fer una comprobació sobre l'accès a la nostra pàgina web
+
+5. Si volem fer una comprobació sobre l'accès a la nostra pàgina web
 >
 ```
 HttpSession session = request.getSession(true);
