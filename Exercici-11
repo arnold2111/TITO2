@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>BATMAN</title>
+</head>
+<body>
+<%-- This is a JSP Comment before JSP Scriplet --%>
+<%
+    
+    int contador1=0;
+    int contador2=0;
+    int total=0;
+    String id = request.getSession().getId();
+    if(id==request.getRequestedSessionId()){
+        
+        out.println("Et trobes a la mateixa Sessio JAJAJA");
+        out.println("Passes per la mateixa sessio " + ++contador1);
+    }
+    else{
+        out.println("Sessió Nova SUPERMAN");
+        %><br><%
+        out.println("Hi han " + ++contador2 + "sessions noves");
+    }
+    total = contador1+contador2;
+    %><br><%
+    out.println("Hi ha un total de " + total + "sessions actives");
+    
+%>
+</body>
+</html>
