@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>BATMAN</title>
+<meta http-equiv="Content-Type" content="text/html"; charset=utf8 />
+<style>
+    #text (color:#FF0;)
+</style>
+</head>
+<body>
+<%-- This is a JSP Comment before JSP Scriplet --%>
+
+    
+    <div align ="center">
+    <p><a onclick="body.style.backgroundColor='#f00';"><span id ="text">Rojo</span>
+    <p><a onclick="body.style.backgroundColor='#fff';"><span id ="text">Blanco</span>
+    <p><a onclick="body.style.backgroundColor='#000';"><span id ="text">Negro</span>
+    
+    <%-- <p><button value="esto es un boton" onclick="mi_funcion()"/> --%>
+    
+
+</body>
+</html>
